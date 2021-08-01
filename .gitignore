@@ -2,7 +2,7 @@
 target/
 
 #settings 제외
-settings/
+.settings/
 
 #classpath 제외
-classpath/
+.classpath/
