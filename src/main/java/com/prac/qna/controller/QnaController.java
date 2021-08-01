@@ -41,9 +41,11 @@ public class QnaController {
 		return "redirect:/qna/qnaList";
 	}
 	
-	//게시물 조회
+	//qna 게시물 조회
 	@RequestMapping(value="/qnaDetail", method=RequestMethod.POST)
 	public void qnaDetail() {
+		
+		
 		
 	}
 	

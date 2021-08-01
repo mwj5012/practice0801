@@ -27,5 +27,10 @@ public class QnaDAO {
 	public void qnaWrite(QnaListVO vo) throws Exception{
 		sql.insert("qnaMapper.qnaWrite", vo);
 	}
-
+	
+	//qna 상세페이지
+	public QnaListVO qnaDetail(int qNum) {
+		
+		return sql.selectOne("qnaMapper.qnaDetail", qNum);
+	}
 }
