@@ -27,9 +27,6 @@ public class QnaController {
 		model.addAttribute("qnaList", qnaList);
 	}
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 	//qna 작성 get
 	@RequestMapping(value="/qnaWrite", method=RequestMethod.GET)
 	public void getQnaWrite() throws Exception {
@@ -44,13 +41,10 @@ public class QnaController {
 		return "redirect:/qna/qnaList";
 	}
 	
->>>>>>> qnaWrite
-=======
 	//게시물 조회
 	@RequestMapping(value="/qnaDetail", method=RequestMethod.POST)
 	public void qnaDetail() {
 		
 	}
 	
->>>>>>> qnaDetail
 }
