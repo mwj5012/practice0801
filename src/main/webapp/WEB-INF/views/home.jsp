@@ -11,5 +11,8 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+
+<p><a href="/qna/qnaList">문의</a></p>
+
 </body>
 </html>
