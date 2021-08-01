@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.prac.qna.VO.QnaListVO;
 import com.prac.qna.service.QnaService;
@@ -52,11 +53,13 @@ public class QnaController {
 	}
 	
 	//qna 게시물 조회
-	@RequestMapping(value="/qnaDetail", method=RequestMethod.POST)
-	public void qnaDetail() {
+	@RequestMapping(value="/qnaDetail", method=RequestMethod.GET)
+	public void qnaDetail(@RequestParam("qNum") int qNum, Model model) throws Exception {
 		logger.info("qnaDetail");
 		
+		QnaListVO vo = service.qnaDetail(qNum);
 		
+		model.addAttribute("qnaDetail", vo);
 		
 	}
 	

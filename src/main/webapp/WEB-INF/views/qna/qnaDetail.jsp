@@ -7,18 +7,15 @@
 </head>
 <body>
 	
-	<form action="" method="post">
-	
 		<label>제목</label>
-		<input type="text" name="qTitle" /> <br />
+		${qnaDetail.qTitle } <br />
 		
 		<label>작성자</label>
-		<input type="text" name="qWriter" /> <br />
+		${qnaDetail.qWriter } <br />
 		
 		<label>내용</label>
-		<textarea name="qContent" cols="50" rows="10"></textarea>
-		
-	</form>
+		${qnaDetail.qContent } <br />
+
 	
 </body>
 </html>

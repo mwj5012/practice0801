@@ -37,12 +37,12 @@
 	
 	<select id="qnaDetail" parameterType="int" resultType="com.prac.qna.VO.QnaListVO">
 		SELECT 
-				Q_NUM AS #{qNum}
-			  , Q_TITLE AS #{qTitle}
-			  , Q_CONTENT AS #{qContent}
-			  , Q_WRITER AS #{qWriter}
-			  , Q_REGDATE AS #{qRegDate}
-			  , Q_VIEWCOUNT AS #{qViewCount}
+				Q_NUM AS QNUM
+			  , Q_TITLE AS QTITLE
+			  , Q_CONTENT AS QCONTENT
+			  , Q_WRITER AS QWRITER
+			  , Q_REGDATE AS QREGDATE
+			  , Q_VIEWCOUNT AS QVIEWCOUNT
 		FROM 
 				TBL_QNA
 		WHERE 
