@@ -23,7 +23,11 @@
 			<c:forEach items="${qnaList }" var="qnaList">
 				<tr>
 					<td>${qnaList.qNum }</td>
-					<td>${qnaList.qTitle }</td>
+					
+					<td>
+					<a href="/qna/qnaDetail?qNum=${${qnaList.qNum } }">${qnaList.qTitle }</a>
+					</td>
+					
 					<td>${qnaList.qWriter }</td>
 					<td>${qnaList.qRegDate }</td>
 					<td>${qnaList.qViewCount }</td>

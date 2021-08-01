@@ -28,6 +28,7 @@ public class QnaController {
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	//qna 작성 get
 	@RequestMapping(value="/qnaWrite", method=RequestMethod.GET)
@@ -44,4 +45,12 @@ public class QnaController {
 	}
 	
 >>>>>>> qnaWrite
+=======
+	//게시물 조회
+	@RequestMapping(value="/qnaDetail", method=RequestMethod.POST)
+	public void qnaDetail() {
+		
+	}
+	
+>>>>>>> qnaDetail
 }
