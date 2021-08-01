@@ -27,4 +27,21 @@ public class QnaController {
 		model.addAttribute("qnaList", qnaList);
 	}
 	
+<<<<<<< HEAD
+=======
+	//qna 작성 get
+	@RequestMapping(value="/qnaWrite", method=RequestMethod.GET)
+	public void getQnaWrite() throws Exception {
+		
+	}
+	
+	//qna 작성 post
+	@RequestMapping(value="/qnaWrite", method=RequestMethod.POST)
+	public String postQnaWrite(QnaListVO vo) throws Exception {
+		service.qnaWrite(vo);
+		
+		return "redirect:/qna/qnaList";
+	}
+	
+>>>>>>> qnaWrite
 }

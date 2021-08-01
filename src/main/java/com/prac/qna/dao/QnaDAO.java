@@ -22,5 +22,10 @@ public class QnaDAO {
 		
 		return sql.selectList("qnaMapper.qnaList");
 	}
+	
+	//qna 게시물 작성
+	public void qnaWrite(QnaListVO vo) throws Exception{
+		sql.insert("qnaMapper.qnaWrite", vo);
+	}
 
 }
