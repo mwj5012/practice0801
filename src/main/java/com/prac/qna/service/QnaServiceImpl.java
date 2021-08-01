@@ -27,4 +27,10 @@ public class QnaServiceImpl implements QnaService {
 		dao.qnaWrite(vo);
 	}
 
+	@Override
+	public QnaListVO qnaDetail(int qNum) throws Exception {
+		
+		return dao.qnaDetail(qNum);
+	}
+
 }
