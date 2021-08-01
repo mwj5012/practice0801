@@ -25,7 +25,7 @@
 					<td>${qnaList.qNum }</td>
 					
 					<td>
-					<a href="/qna/qnaDetail?qNum=${qnaList.qNum } }">${qnaList.qTitle }</a>
+					<a href="/qna/qnaDetail?qNum=${qnaList.qNum }">${qnaList.qTitle }</a>
 					</td>
 					
 					<td>${qnaList.qWriter }</td>
