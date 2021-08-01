@@ -8,15 +8,30 @@
 	<!-- qna 게시물 목록 조회 -->
 	<select id="qnaList" resultType="com.prac.qna.VO.QnaListVO">
 		SELECT 
-				q_num AS qNum
-			  , q_title AS qTitle
-			  , q_content AS qContent
-			  , q_writer AS qWriter
-			  , q_regDate AS qRegDate
-			  , q_viewCount AS qViewCount
+				Q_NUM AS QNUM
+			  , Q_TITLE AS QTITLE
+			  , Q_CONTENT AS QCONTENT
+			  , Q_WRITER AS QWRITER
+			  , Q_REGDATE AS QREGDATE
+			  , Q_VIEWCOUNT AS QVIEWCOUNT
 		FROM 
-				tbl_qna
-		ORDER BY q_num DESC
+				TBL_QNA
+		ORDER BY Q_NUM DESC
 	</select>
-
+	
+	<insert id="qnaWrite" parameterType="com.prac.qna.VO.QnaListVO">
+		INSERT INTO TBL_QNA(
+							 Q_NUM
+						   , Q_TITLE
+						   , Q_CONTENT
+						   , Q_WRITER
+						  )
+					VALUES(
+							TBL_QNA_SEQ.NEXTVAL
+						  , #{qTitle}
+						  , #{qContent}
+						  , #{qWriter}
+						  )
+	</insert>
+	
 </mapper>

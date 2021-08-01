@@ -14,10 +14,17 @@ public class QnaServiceImpl implements QnaService {
 	@Autowired
 	private QnaDAO dao;
 	
+	//qna 게시물 목록 조회
 	@Override
 	public List<QnaListVO> qnaList() throws Exception {
 		
 		return dao.qnaList();
+	}
+
+	//qna 게시물 작성
+	@Override
+	public void qnaWrite(QnaListVO vo) throws Exception {
+		dao.qnaWrite(vo);
 	}
 
 }
