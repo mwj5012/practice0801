@@ -18,6 +18,7 @@ public class QnaController {
 	@Autowired
 	QnaService service;
 	
+	//qna 게시물 목록 조회
 	@RequestMapping(value="/qnaList", method=RequestMethod.GET)
 	public void qnaList(Model model) throws Exception {
 		
@@ -25,4 +26,5 @@ public class QnaController {
 		
 		model.addAttribute("qnaList", qnaList);
 	}
+	
 }
