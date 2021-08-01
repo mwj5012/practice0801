@@ -25,4 +25,11 @@ public class QnaController {
 		
 		model.addAttribute("qnaList", qnaList);
 	}
+	
+	//게시물 조회
+	@RequestMapping(value="/qnaDetail", method=RequestMethod.POST)
+	public void qnaDetail() {
+		
+	}
+	
 }
