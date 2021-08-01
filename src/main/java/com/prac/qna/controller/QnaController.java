@@ -14,7 +14,7 @@ import com.prac.qna.service.QnaService;
 @Controller
 @RequestMapping("/qna/*")
 public class QnaController {
-	
+	//asdf
 	@Autowired
 	QnaService service;
 	
