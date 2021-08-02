@@ -29,8 +29,14 @@ public class QnaDAO {
 	}
 	
 	//qna 상세페이지
-	public QnaListVO qnaDetail(int qNum) {
+	public QnaListVO qnaDetail(int qNum) throws Exception{
 		
 		return sql.selectOne("qnaMapper.qnaDetail", qNum);
 	}
+	
+	//qna 게시물 수정
+	public void qnaModify(QnaListVO vo) throws Exception{
+		sql.update("qnaMapper.qnaModify", vo);
+	}
+	
 }

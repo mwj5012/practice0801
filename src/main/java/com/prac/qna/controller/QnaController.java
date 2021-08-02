@@ -24,7 +24,6 @@ public class QnaController {
 	@Autowired
 	QnaService service;
 	
-	
 	//qna 게시물 목록 조회
 	@RequestMapping(value="/qnaList", method=RequestMethod.GET)
 	public void qnaList(Model model) throws Exception {
@@ -60,7 +59,26 @@ public class QnaController {
 		QnaListVO vo = service.qnaDetail(qNum);
 		
 		model.addAttribute("qnaDetail", vo);
+	}
+	
+	//qna 게시물 수정 get
+	@RequestMapping(value="/qnaModify", method=RequestMethod.GET)
+	public void getQnaModify(@RequestParam("qNum") int qNum, Model model) throws Exception {
+		logger.info("qnaModify");
 		
+		QnaListVO vo = service.qnaDetail(qNum);
+		
+		model.addAttribute("qnaDetail", vo);
+	}
+	
+	//qna 게시물 수정 post
+	@RequestMapping(value="/qnaModify", method=RequestMethod.POST)
+	public String postQnaModify(QnaListVO vo) throws Exception {
+		logger.info("qnaModify");
+		
+		service.qnaModify(vo);
+		
+		return "redirect:/qna/qnaDetail?qNum=" + vo.getqNum();
 	}
 	
 }

@@ -14,6 +14,10 @@ public interface QnaService {
 	
 	//qna 상세페이지
 	public QnaListVO qnaDetail(int qNum) throws Exception;
+	
+	//qna 게시물 수정
+	public void qnaModify(QnaListVO vo) throws Exception;
+	
 }
 
 

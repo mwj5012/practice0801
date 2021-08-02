@@ -15,6 +15,10 @@
 		
 		<label>내용</label>
 		${qnaDetail.qContent } <br />
+		
+		<div>
+		<a href="/qna/qnaModify?qNum=${qnaDetail.qNum }">게시물 수정</a>
+		</div>
 
 	
 </body>
