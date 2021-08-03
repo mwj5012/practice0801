@@ -8,15 +8,11 @@
 <title>문의</title>
 </head>
 <body>
-<<<<<<< HEAD
 
-=======
-	
 	<div id="nav">
 		<%@ include file="../include/nav.jsp" %>
 	</div>
 	
->>>>>>> include
 	<table>
 		<thead>
 			<tr>
