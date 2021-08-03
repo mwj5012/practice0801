@@ -39,4 +39,9 @@ public class QnaDAO {
 		sql.update("qnaMapper.qnaModify", vo);
 	}
 	
+	//qna 게시물 삭제
+	public void qnaDelete(int qNum) throws Exception{
+		sql.delete("qnaMapper.qnaDelete", qNum);
+	}
+	
 }

@@ -17,9 +17,9 @@
 		${qnaDetail.qContent } <br />
 		
 		<div>
-		<a href="/qna/qnaModify?qNum=${qnaDetail.qNum }">게시물 수정</a>
+		<a href="/qna/qnaModify?qNum=${qnaDetail.qNum }">게시물 수정</a>,
+		<a href="/qna/qnaDelete?qNum=${qnaDetail.qNum }">게시물 삭제</a>
 		</div>
 
-	
 </body>
 </html>

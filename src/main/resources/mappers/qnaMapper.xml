@@ -63,4 +63,11 @@
 				Q_NUM = #{qNum}
 	</update>
 	
+	<!-- qna 게시물 삭제 -->
+	<delete id="qnaDelete" parameterType="int">
+		DELETE
+		FROM TBL_QNA
+		WHERE Q_NUM = #{qNum}
+	</delete>
+	
 </mapper>

@@ -40,4 +40,9 @@ public class QnaServiceImpl implements QnaService {
 		dao.qnaModify(vo);
 	}
 
+	@Override
+	public void qnaDelete(int qNum) throws Exception {
+		dao.qnaDelete(qNum);
+	}
+
 }

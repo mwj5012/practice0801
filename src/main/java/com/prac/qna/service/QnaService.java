@@ -18,6 +18,9 @@ public interface QnaService {
 	//qna 게시물 수정
 	public void qnaModify(QnaListVO vo) throws Exception;
 	
+	//qna 게시물 삭제
+	public void qnaDelete(int qNum) throws Exception;
+	
 }
 
 
