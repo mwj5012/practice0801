@@ -7,7 +7,7 @@
 <title>문의</title>
 </head>
 <body>
-	<!-- asdf -->
+
 	<table>
 		<thead>
 			<tr>
