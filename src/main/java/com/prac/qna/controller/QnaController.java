@@ -81,4 +81,14 @@ public class QnaController {
 		return "redirect:/qna/qnaDetail?qNum=" + vo.getqNum();
 	}
 	
+	//qna 게시물 삭제
+	@RequestMapping(value="/qnaDelete", method=RequestMethod.GET)
+	public String qnaDelete(@RequestParam("qNum") int qNum) throws Exception {
+		logger.info("qnaDelete");
+		
+		service.qnaDelete(qNum);
+		
+		return "redirect:/qna/qnaList";
+	}
+	
 }
